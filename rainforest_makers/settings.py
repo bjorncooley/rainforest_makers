@@ -12,9 +12,6 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
-#Import Spirit
-from spirit.settings import *
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
@@ -53,6 +50,9 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'rainforest_makers.urls'
 
 WSGI_APPLICATION = 'rainforest_makers.wsgi.application'
+
+#Import Spirit
+from spirit.settings import *
 
 
 # Database
