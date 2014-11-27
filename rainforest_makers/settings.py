@@ -58,9 +58,9 @@ WSGI_APPLICATION = 'rainforest_makers.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'mysql.connector.django',
-        'NAME': 'bjorncooley$davinci',
-        'USER' : 'bjorncooley',
-        'PASSWORD' : 'DatabaseMagic!',
+        'NAME': 'vwhwang$rainforest_makers',
+        'USER' : 'vwhwang',
+        'PASSWORD' : 't2vcDatabase!',
     }
 }
 
