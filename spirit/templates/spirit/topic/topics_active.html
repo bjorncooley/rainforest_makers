@@ -6,8 +6,14 @@
 
 {% block content %}
 
-    {% include "spirit/topic/_top_bar.html" with category=None categories=categories %}
+	<div id="topics_active_splash_section">
+		<h2>The Community Forum for Rainforest Makers</h2>
+	</div>
+	
+	<div class="content_container">
+		{% include "spirit/topic/_top_bar.html" with category=None categories=categories %}
 
-    {% include "spirit/topic/_render_page_list.html" %}
+		{% include "spirit/topic/_render_page_list.html" %}
 
+	</div>
 {% endblock %}

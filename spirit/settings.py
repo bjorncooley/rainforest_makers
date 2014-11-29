@@ -11,9 +11,9 @@ ST_COMMENTS_PAGE_VAR = 'page'
 ST_TOPIC_PRIVATE_CATEGORY_PK = 1
 ST_UNCATEGORIZED_CATEGORY_PK = 2
 
-ST_RATELIMIT_ENABLE = True
+ST_RATELIMIT_ENABLE = False
 ST_RATELIMIT_CACHE_PREFIX = 'srl'
-ST_RATELIMIT_CACHE = 'default'
+ST_RATELIMIT_CACHE = '0'
 
 ST_NOTIFICATIONS_PER_PAGE = 20
 
@@ -60,12 +60,21 @@ INSTALLED_APPS = (
 )
 
 # python manage.py createcachetable spirit_cache
+# CACHES = {
+#     'default': {
+#         'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
+#         'LOCATION': 'spirit_cache',
+#     },
+# }
+
 CACHES = {
     'default': {
-        'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
-        'LOCATION': 'spirit_cache',
+        'BACKEND': 'django.core.cache.backends.dummy.DummyCache',
+        'TIMEOUT': 0,
+
     },
 }
+
 
 AUTH_USER_MODEL = 'spirit.User'
 
@@ -105,12 +114,12 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 )
 
 # Keep templates in memory
-TEMPLATE_LOADERS = (
-    ('django.template.loaders.cached.Loader', (
-        'django.template.loaders.filesystem.Loader',
-        'django.template.loaders.app_directories.Loader',
-    )),
-)
+# TEMPLATE_LOADERS = (
+#     ('django.template.loaders.cached.Loader', (
+#         'django.template.loaders.filesystem.Loader',
+#         'django.template.loaders.app_directories.Loader',
+#     )),
+# )
 
 #
 # Third-party apps settings defined below...

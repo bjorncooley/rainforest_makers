@@ -359,12 +359,12 @@ th {
 
 ::selection {
   background: #cecece;
-  color: #fefefe;
+  color: white;
   text-shadow: none; }
 
 ::-moz-selection {
   background: #cecece;
-  color: #fefefe;
+  color: white;
   text-shadow: none; }
 
 i {
@@ -432,7 +432,7 @@ html {
   font-size: 16px;
   line-height: 24px;
   color: #444444;
-  background-color: #fefefe;
+  background-color: white;
   cursor: default; }
 
 body {
@@ -650,7 +650,7 @@ input[type="submit"].button,
   display: block;
   line-height: 42px;
   white-space: nowrap;
-  color: #cccccc;
+  color: #ccc;
   padding-left: 15px; }
   .side-menu-link:focus, .side-menu-link:hover {
     color: #fefefe;
@@ -662,7 +662,7 @@ input[type="submit"].button,
   font-size: 35px;
   line-height: 75px;
   margin-left: 15px;
-  color: #cccccc; }
+  color: #ccc; }
   .side-menu-close:focus, .side-menu-close:hover {
     color: #fefefe; }
 
@@ -674,7 +674,9 @@ input[type="submit"].button,
   float: left;
   font-size: 28px;
   line-height: 48px;
-  color: #444444; }
+  color: #444444;
+  margin-top: 20px;
+  display: inline-block; }
 
 .header-link {
   float: right;
@@ -731,7 +733,7 @@ input[type="submit"].button,
   overflow: auto;
   max-height: 144px;
   margin-bottom: 24px;
-  background-color: #fefefe;
+  background-color: white;
   border: 1px solid #cecece; }
 
 .errorlist {
@@ -774,8 +776,8 @@ input[type="submit"].button,
     .row-title {
       float: left;
       display: block;
-      margin-right: 3.57866%;
-      width: 48.21067%;
+      margin-right: 7.42297%;
+      width: 100%;
       margin-bottom: 0; }
       .row-title:last-child {
         margin-right: 0; } }
@@ -801,8 +803,8 @@ input[type="submit"].button,
     .row-info {
       float: left;
       display: block;
-      margin-right: 3.57866%;
-      width: 48.21067%;
+      margin-right: 7.42297%;
+      width: 100%;
       text-align: right; }
       .row-info:last-child {
         margin-right: 0; } }
@@ -826,8 +828,8 @@ input[type="submit"].button,
     .categories {
       float: left;
       display: block;
-      margin-right: 3.57866%;
-      width: 48.21067%; }
+      margin-right: 7.42297%;
+      width: 100%; }
       .categories:last-child {
         margin-right: 0; } }
 
@@ -845,8 +847,8 @@ input[type="submit"].button,
     .new-topic {
       float: left;
       display: block;
-      margin-right: 3.57866%;
-      width: 48.21067%;
+      margin-right: 7.42297%;
+      width: 100%;
       text-align: right; }
       .new-topic:last-child {
         margin-right: 0; } }
@@ -969,8 +971,8 @@ input.move-comment-checkbox {
     .paginator {
       float: left;
       display: block;
-      margin-right: 3.57866%;
-      width: 48.21067%; }
+      margin-right: 7.42297%;
+      width: 100%; }
       .paginator:last-child {
         margin-right: 0; } }
 
@@ -985,8 +987,8 @@ input.move-comment-checkbox {
     .notify {
       float: left;
       display: block;
-      margin-right: 3.57866%;
-      width: 48.21067%;
+      margin-right: 7.42297%;
+      width: 100%;
       text-align: right; }
       .notify:last-child {
         margin-right: 0; } }
@@ -1025,8 +1027,8 @@ ul.reply-markdown {
   display: table;
   width: 100%;
   height: 100%;
-  background: #fefefe;
-  background: rgba(254, 254, 254, 0.75); }
+  background: white;
+  background: rgba(255, 255, 255, 0.75); }
   @media screen and (min-width: 768px) {
     .share {
       width: 300px;
@@ -1127,8 +1129,8 @@ ul.reply-markdown {
     .private-participants {
       float: left;
       display: block;
-      margin-right: 3.57866%;
-      width: 48.21067%; }
+      margin-right: 7.42297%;
+      width: 100%; }
       .private-participants:last-child {
         margin-right: 0; } }
 
@@ -1144,8 +1146,8 @@ ul.reply-markdown {
     .private-leave {
       float: left;
       display: block;
-      margin-right: 3.57866%;
-      width: 48.21067%;
+      margin-right: 7.42297%;
+      width: 100%;
       text-align: right; }
       .private-leave:last-child {
         margin-right: 0; } }
@@ -1217,6 +1219,30 @@ ul.reply-markdown {
     .new-category {
       text-align: right; } }
 
+/* ----------- RAINFOREST MAKERS CUSTOM STYLES ---------- */
+#topics_active_splash_section {
+  height: 500px;
+  background: url("../images/rainforest_image.jpg") center;
+  text-align: center;
+  margin-bottom: 20px; }
+  #topics_active_splash_section h2 {
+    color: white;
+    display: inline-block;
+    padding-top: 200px;
+    font-size: 1.6em; }
+
+header {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto; }
+
+body {
+  max-width: 100%; }
+  body .content_container {
+    max-width: 1280px;
+    width: 90%;
+    margin: 0 auto; }
+
 /*
 div.container {
   @include outer-container;
@@ -1244,3 +1270,5 @@ div.container {
   
 }
 */
+
+/*# sourceMappingURL=styles.css.map */

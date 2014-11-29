@@ -590,6 +590,45 @@ ul.reply-markdown {
 
 
 
+/* ----------- RAINFOREST MAKERS CUSTOM STYLES ---------- */
+
+#topics_active_splash_section {
+
+  height: 500px;
+  background: url('../images/rainforest_image.jpg') center;
+  text-align: center;
+  margin-bottom: 20px;
+  
+  h2 {
+
+    color: white;
+    display: inline-block;
+    padding-top: 200px;
+    font-size: 1.6em;
+  }
+}
+
+header {
+
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+body {
+
+  max-width: 100%;
+
+  .content_container {
+
+    max-width: 1280px;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+
+
   
 /*
 div.container {
