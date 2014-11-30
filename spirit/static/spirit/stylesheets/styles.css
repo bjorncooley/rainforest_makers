@@ -1236,12 +1236,13 @@ header {
   max-width: 1280px;
   margin: 0 auto; }
 
-body {
+body#topics_active {
   max-width: 100%; }
-  body .content_container {
-    max-width: 1280px;
-    width: 90%;
-    margin: 0 auto; }
+
+.content_container {
+  max-width: 1280px;
+  width: 90%;
+  margin: 0 auto; }
 
 /*
 div.container {

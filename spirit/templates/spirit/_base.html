@@ -75,7 +75,7 @@
 
   </head>
 
-  <body>
+  <body id="{% block body_id %}{% endblock %}">
 
     {% include 'spirit/_header.html' %}
     {% render_messages messages %}
